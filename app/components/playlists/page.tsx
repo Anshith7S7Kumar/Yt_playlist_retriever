@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 type ApiResponse = {
   kind: string;
@@ -58,9 +59,11 @@ const page = async() => {
           className="flex items-center space-x-4 w-full"
         >
           <div className="relative flex-shrink-0">
-            <img
+            <Image
               src={video.thumbnail}
               alt={video.title}
+              width={192}
+              height={108}
               className="w-48 h-28 rounded-lg object-cover"
             />
             <span className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white text-xs px-2 py-1 rounded">
