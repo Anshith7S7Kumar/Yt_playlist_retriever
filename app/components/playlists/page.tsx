@@ -45,7 +45,7 @@ const page = async() => {
 
   return (
     <div>
-  <h1 className="text-center text-3xl p-4 font-bold">Here is your YouTube Playlist!</h1>
+  <h1 className="text-center text-3xl p-4 font-bold text-red-400">Here is your YouTube Playlist!</h1>
   <div className="space-y-4">
     {videos.map((video, index) => (
       <div
