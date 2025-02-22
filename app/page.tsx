@@ -9,7 +9,7 @@ export default function SignIn() {
 
   const handleSignIn = async() => {
     "use server"
-    await signIn("google", {redirectTo:process.env.AUTH_REDIRECT_URI}); 
+    await signIn("google", {redirectTo:"/playlists"}); 
   }
   return (
     <><h1 className="text-3xl text-center font-sans font-bold p-4 text-red-400">Welcome to YT Playlist retriever!</h1>
